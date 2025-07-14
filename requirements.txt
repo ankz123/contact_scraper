@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+aiohttp
+pandas
+beautifulsoup4
+python-multipart
