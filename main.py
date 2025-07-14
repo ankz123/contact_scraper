@@ -140,3 +140,6 @@ async def download_file(filename: str):
     if not os.path.exists(path):
         return JSONResponse(status_code=404, content={"error": "File not found"})
     return FileResponse(path=path, filename=filename, media_type="text/csv")
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run("main:app", host="0.0.0.0", port=8000)
